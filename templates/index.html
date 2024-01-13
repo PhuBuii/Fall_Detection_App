@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web nhận diện té ngã</title>
+    <link rel="stylesheet" href="../static/assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="mynavbar">
+      <a href="#p1" id="logo"
+        ><img src="../static/assets/images/Logo.png" alt=""
+      /></a>
+      <div id="mynav">
+        <div class="option selected"><a href="#p2">Live cam</a></div>
+        <div class="option"><a href="#p3">Warning</a></div>
+        <div class="option"><a href="#p4">About Us</a></div>
+      </div>
+    </div>
+    <div class="page" id="p1">
+      <div class="content">
+        <h1><b>CS406 PROJECT</b></h1>
+        <p>
+          Hello, we are Techno. Our mission is to provide technology solutions
+          that could help people solve their life's problems. We will always
+          accompany our customers to help them experience a better life.
+        </p>
+        <button>
+          <a href="#p2"><b>GET STARTED</b></a>
+        </button>
+      </div>
+      <div class="main-img">
+        <img src="../static/assets/images/Computer.png" alt="" />
+      </div>
+    </div>
+    <div class="page" id="p2">
+      <div class="webcam"><img src="{{ url_for('video_feed') }}" /></div>
+    </div>
+    <div class="page" id="p3">
+      <div class="result-show">
+        <div id="showcapture" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#showcapture"
+            data-bs-slide="prev"
+          >
+            <i
+              class="fa-solid fa-circle-left fa-2xl"
+              style="color: #8b8ada; position: relative; left: -5vw"
+            ></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#showcapture"
+            data-bs-slide="next"
+          >
+            <i
+              class="fa-solid fa-circle-right fa-2xl"
+              style="color: #8b8ada; position: relative; left: 5vw"
+            ></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <p id="result-content" align="center">Falling detect at 11:11 a.m</p>
+      <div class="action-btn" align="center">
+        <button id="call-help"><b>CALL HELP</b></button>
+        <button id="ok"><b>IT'S OKAY</b></button>
+      </div>
+    </div>
+    <div class="page" id="p4">
+      <h1 id="heading"><b>Members in team:</b></h1>
+      <div class="members">
+        <div id="member">
+          <div id="member-name">Bùi Quang Phú</div>
+          <div id="member-major">KHMT</div>
+          <div id="member-id">20520273</div>
+        </div>
+        <div id="member">
+          <div id="member-name">Nguyễn Thị Ngọc Nga</div>
+          <div id="member-major">KHMT</div>
+          <div id="member-id">20521641</div>
+        </div>
+        <div id="member">
+          <div id="member-name">Nguyễn Anh Kiệt</div>
+          <div id="member-major">KTMT</div>
+          <div id="member-id">20521497</div>
+        </div>
+      </div>
+    </div>
+    <script src="../static/assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

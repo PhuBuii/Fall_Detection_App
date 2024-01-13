@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 15vh;
+}
+#p1,
+#p3 {
+  background-color: #010922;
+}
+#p2,
+#p4 {
+  background-image: linear-gradient(to right, #8b8ada, #8cd0d0);
+}
+#mynavbar {
+  position: fixed;
+
+  top: 0;
+  height: 10vh;
+  width: 100%;
+
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 3%;
+}
+#logo {
+  width: 50%;
+  height: 10vh;
+  margin-top: 0.6%;
+}
+#logo img {
+  width: 15vw;
+}
+#mynav {
+  display: flex;
+  width: 50%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #ffffff;
+}
+#mynav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+}
+#mynav .option.selected a {
+  color: #010922;
+  padding: 8% 5%;
+  background-color: white;
+  border-radius: 10px;
+}
+/*page 1*/
+#p1 {
+  display: flex;
+  padding-top: 15%;
+  justify-content: space-around;
+}
+#p1 .content {
+  width: 50vw;
+  color: white;
+  margin-left: 5%;
+}
+#p1 .content h1 {
+  font-size: 7vw;
+}
+#p1 .content p {
+  font-size: 1.3vw;
+  text-align: justify;
+}
+#p1 .main-img {
+  width: 50vw;
+  align-items: center;
+}
+#p1 .main-img img {
+  width: 40vw;
+  margin-left: 10%;
+}
+#p1 button {
+  padding: 2%;
+  width: 15vw;
+  font-size: 1vw;
+  border-radius: 50px;
+  background-color: #8b8ada;
+  color: white;
+  border: none;
+}
+#p1 button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#p1 .content h1,
+#p1 .content p,
+#p1 .content button {
+  margin-top: 5%;
+}
+/*page 2*/
+#p2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+}
+#p2 .webcam {
+  background-color: gray;
+  width: 80vw;
+  height: 70vh;
+}
+/*page 3*/
+#p3 .result-show {
+  width: 30vw;
+  margin-top: 5vh;
+  margin-left: 35vw;
+}
+#p3 #result-content {
+  color: white;
+  margin-top: 2%;
+  font-size: 1.3vw;
+}
+#p3 .action-btn button {
+  padding: 1%;
+  margin: 2%;
+  width: 10%;
+  font-size: 1vw;
+  border-radius: 50px;
+
+  color: #ffffff;
+}
+
+#call-help {
+  border: none;
+  background-color: #8b8ada;
+}
+#ok {
+  border: 1px solid #8cd0d0;
+  background-color: #01092200;
+}
+/*page 4*/
+#p4 {
+  padding: 5%;
+  padding-top: 30vh;
+}
+#p4 #heading {
+  color: #ffffff;
+}
+#p4 .members {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+#p4 .members #member {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 25vw;
+  padding: 2%;
+  font-size: 1.5vw;
+}
